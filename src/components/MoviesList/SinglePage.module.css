@@ -1,0 +1,240 @@
+.signlep {
+  max-width: 1100px;
+  margin: auto;
+  background: rgb(37, 37, 37);
+  display: flex;
+  padding: 23px;
+}
+ul {
+  padding: 0;
+}
+.unActive_title, .unActive {
+  display: none;
+}
+.signlep__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+}
+.singlep__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 84px;
+  text-shadow: 0px 10px 5px #000000;
+  text-align: center;
+  margin-top: 480px;
+  
+}
+.singlep__top {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  font-weight: 700;
+}
+.single__top_info {
+  width: 100%;
+  font-size: 20px;
+}
+.movie__content_rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  width: 200px;
+  font-size: 16px;
+}
+.movie__content_rate_watch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie__watched {
+  padding: 0 0 0px 25px;
+}
+.movie__watch_movie_btns {
+  background: #871120;
+  border: 0.5px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  height: 40px;
+  padding: 0px 50px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  align-items: center;
+  display: flex;
+}
+
+.movie__info_list {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 52px 0;
+}
+.movie__info_list li {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  flex-wrap: wrap;
+}
+.movie__info_list li span:nth-child(1),
+.movie__description span {
+  color: #fff;
+}
+.movie__description {
+  color: rgba(255, 255, 255, 0.7) !important;
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.movie__info_item_dott_beetwen {
+  width: 5px;
+  height: 5px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.array_info_item span:last-child {
+  display: none;
+}
+.movie__watched {
+  padding: 0;
+}
+.movie__watched p {
+  color: #fff;
+  display: flex;
+  gap: 10px;
+}
+.eye_icon {
+  background-image: url(../utils/img/eye_icon.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+}
+.movie__save_icon {
+  width: 40px;
+  height: 40px;
+  background-image: url(../utils/img/save_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.movie__save_icon_active {
+  background-image: url(../utils/img/full_save_icon.png);
+}
+/* ///LINKSBAR */
+
+.links_bar__inner {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.links_bar__inner a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #000;
+  font-size: 25px;
+  line-height: 30px;
+  background: rgba(177, 11, 21, 0.75);
+  border: 2px solid #000000;
+  border-radius: 25px 25px 25px 25px;
+  padding: 5px 20px;
+  transition: 1.2s all ease;
+}
+.links_bar__inner a:hover {
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #fff;
+}
+
+/* ///// */
+
+
+/* MOVIE MODAL */
+
+.movie_modal__block {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.movie_modal__bg {
+  background-color: rgba(0, 0, 0, 0.884);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  justify-content: center;
+  display: flex; 
+}
+.movie_modal__film {
+  width: 900px;
+  height: 500px;
+  z-index: 4;
+  margin: auto;
+  display: flex;
+}
+
+/* ///// */
+
+@media (max-width: 850px) {
+  .movie__content_rate_watch {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 273px;
+  }
+  .movie__content_rate {
+    width: 265px;
+  }
+  .links_bar__inner a{
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .links_bar__inner a{
+    font-size: 14px;
+  }
+  .links_bar__inner {
+    flex-wrap: wrap;
+  }
+  .singlep__top {
+    flex-direction: column;
+  }
+  .movie__save_icon {
+    bottom: 30px;
+    top: inherit;
+  }
+}
+@media (max-width: 730px) {
+ .sumbit_btn_withput_hover{
+  padding-left: 20px;
+ }
+}

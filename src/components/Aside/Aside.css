@@ -1,0 +1,44 @@
+.main__aside_info {
+  max-width: 314px;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.main__aside_info_fixed {
+  position: fixed;
+  max-width: 314px;
+  z-index: 1;
+  top: 0px;
+}
+
+.wrap {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .aside {
+    width: 314px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .aside #aside_content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    transition: all 2s ease;
+  }
+
+  @media (max-width: 1100px) {
+    .aside {
+      width: 85% !important;
+      margin-right: 0;
+    }
+    .aside #aside_content {
+      position: relative;
+    }   
+  }
+
+  

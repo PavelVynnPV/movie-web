@@ -1,0 +1,380 @@
+nav {
+  max-width: 1200px;
+  margin: auto;
+}
+.unActive {
+  display: none !important;
+}
+.nav__inner_top {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  align-items: center;
+  margin-bottom: 115px;
+}
+.nav__logo {
+  background-image: url(../utils/img/seekno-logo.png);
+  background-position: center;
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  position: inherit;
+  z-index: 2;
+}
+.nav__sign_btns {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.sign_crossLine,
+.nav__signIn,
+.nav__signUp {
+  padding-bottom: 5px;
+}
+.nav__signIn,
+.nav__signUp {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.sign__underline {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  transition: 0.7s all ease;
+}
+.nav__signIn:hover .sign__underline {
+  left: 0;
+}
+.nav__signUp:hover .sign__underline {
+  left: 0;
+}
+
+/* ////SEARCH */
+
+.nav__inner_search_box {
+  max-width: 840px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 145px;
+}
+.nav__inner_search {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding: 15px 0 15px 100px;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+}
+.search_icon {
+  background-image: url(../utils/img/icon_search.png);
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  position: absolute;
+  left: 30px;
+  bottom: 184px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ////// */
+
+/* ///LINKSBAR */
+
+.links_bar__inner {
+  display: flex;
+  gap: 2px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.links_bar__inner a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #000;
+  font-size: 25px;
+  line-height: 30px;
+  background: rgba(177, 11, 21, 0.75);
+  border: 2px solid #000000;
+  border-radius: 25px 25px 0px 0px;
+  padding: 5px 20px;
+  transition: 1.2s all ease;
+}
+.links_bar__inner a:hover {
+  background: rgba(0, 0, 0, 0.75);
+  border: 2px solid #fff;
+}
+
+/* ////// */
+
+/* signform */
+
+.sign_form {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.background_dark {
+  background-color: rgba(0, 0, 0, 0.753);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.sign_form__inner {
+  background-color: #000;
+  position: fixed;
+  top: 100px;
+  left: 240px;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  border: 3px solid rgba(217, 217, 217, 0.2);
+  border-radius: 15px;
+  z-index: 2;
+  padding: 50px 30px;
+  transition: 1s all ease;
+}
+.logog__modal {
+  background-image: url(../utils/img/seekno-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+}
+.modal_close_icon {
+  background-image: url(../utils/img/cross_icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 28px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 32px;
+  cursor: pointer;
+}
+.client__profile_image {
+  background-image: url(../utils/img/client_profile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 60px;
+  height: 55px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+.client__menu_active {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.89);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+/* ////// */
+
+/* menu */
+
+.client__menu_container {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  align-items: center;
+}
+.client__menu_img {
+  width: 220px;
+  height: 200px;
+}
+.client__menu_logo {
+  background-image: url(../utils/img/seekno-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 220px;
+  height: 50px;
+  margin: 60px 0 126px 0px;
+}
+.client__menu_name {
+  color: red;
+  font-size: 50px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.client__menu_name::after {
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: #737373;
+  position: absolute;
+  left: -30px;
+  bottom: -22px;
+}
+.client__menu_list {
+  gap: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__list_item {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.menu__list_item:nth-child(-n+2):after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #737373;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+}
+.menu__list_item_icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+.menu__list_item:nth-child(1) span{
+  background-image: url(../utils/img/menu_mini_profile_icon.svg);
+}
+.menu__list_item:nth-child(2) span{
+  background-image: url(../utils/img/menu_mini_settigns_icon.svg);
+}
+@media (max-width: 1190px) {
+  .sign_form__inner {
+    left: 119px;
+  }
+}
+@media (max-width: 1110px) {
+  .sign_form__inner {
+    left: 59px;
+  }
+}
+@media (max-width: 1050px) {
+  .sign_form__inner {
+    left: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .sign_form__inner {
+    left: 10px;
+    width: 800px;
+  }
+}
+@media (max-width: 900px) {
+  .sign_form__inner {
+    left: 10px;
+    width: 600px;
+    left: 120px;
+  }
+  form {
+    width: 500px;
+  }
+}
+@media (max-width: 810px) {
+  .sign_form__inner {
+    left: 60px;
+  }
+}
+@media (max-width: 750px) {
+  .sign_form__inner {
+    left: 30px;
+  }
+}
+@media (max-width: 730px) {
+  .sign_form__inner {
+    width: 300px;
+    left: 180px;
+  }
+  form {
+    width: 300px;
+  }
+  .modal_close_icon {
+    width: 20px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .sign_form__inner {
+    left: 70px;
+  }
+}
+@media (max-width: 468px) {
+  .sign_form__inner {
+    left: 40px;
+  }
+}
+@media (max-width: 430px) {
+  .sign_form__inner {
+    left: 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  .links_bar__inner {
+    flex-wrap: wrap;
+  }
+  .links_bar__inner a{
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .links_bar__inner a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px) {
+  .nav__inner_top {
+    flex-direction: column;
+  }
+  .nav__inner_search_box {
+    padding: 0 20px 145px 20px;
+  }
+  .nav__inner_search {
+    padding-left: 60px;
+  }
+}
+
+/* ///// */
