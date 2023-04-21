@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/movie-web/static/css/main.1fe28126.css",
+    "main.js": "/movie-web/static/js/main.de37fea7.js",
+    "static/media/seekno-logo.png": "/movie-web/static/media/seekno-logo.19504dc54de88bb9a27c.png",
+    "static/media/menu_mini_settigns_icon.svg": "/movie-web/static/media/menu_mini_settigns_icon.7cbf68a9d76ae54ba60c.svg",
+    "static/media/menu_mini_profile_icon.svg": "/movie-web/static/media/menu_mini_profile_icon.0f23b4a89fb4acb8f91b.svg",
+    "static/media/client_profile.svg": "/movie-web/static/media/client_profile.c43283f4d66535daa8b7b71cac1e8c26.svg",
+    "static/media/star.svg": "/movie-web/static/media/star.d2186f0e2b67972d5a1f.svg",
+    "static/media/facebook_icon.svg": "/movie-web/static/media/facebook_icon.82cf6d430c56e84c94ab.svg",
+    "static/media/eye_icon.svg": "/movie-web/static/media/eye_icon.4524816a3f6595ceb0fa.svg",
+    "static/media/full_star.svg": "/movie-web/static/media/full_star.29badf9418929d5696d4.svg",
+    "static/media/save_icon.svg": "/movie-web/static/media/save_icon.ed08dc37ab14a921c55b.svg",
+    "static/media/menu_mini_exit_icon.svg": "/movie-web/static/media/menu_mini_exit_icon.b42b1f41f98f5b624ed9.svg",
+    "static/media/cross_icon.svg": "/movie-web/static/media/cross_icon.2c20e4d7fa656ae1df33.svg",
+    "index.html": "/movie-web/index.html",
+    "main.1fe28126.css.map": "/movie-web/static/css/main.1fe28126.css.map",
+    "main.de37fea7.js.map": "/movie-web/static/js/main.de37fea7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fe28126.css",
+    "static/js/main.de37fea7.js"
+  ]
+}
