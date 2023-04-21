@@ -96,7 +96,7 @@ function App() {
       <div className={"app_content"}>
         <img
           className={
-            webHref === `http://localhost:3000/singlepage/${itemInfo.id}`
+            webHref === `http://movie-web/localhost:3000/singlepage/${itemInfo.id}`
               ? "unActive"
               : "main_bg_photo"
           }
@@ -106,7 +106,7 @@ function App() {
         <div className="image_shadow_box">
           <img
             className={
-              webHref === `http://localhost:3000/singlepage/${itemInfo.id}`
+              webHref === `http://movie-web/localhost:3000/singlepage/${itemInfo.id}`
                 ? "singlep__background"
                 : "unActive_img"
             }

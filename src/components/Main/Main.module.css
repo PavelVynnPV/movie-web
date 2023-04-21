@@ -351,11 +351,7 @@ main {
   .movie__save_icon {
     right: 12px;
   }
-   .rates_movie {
-    width: 100%;
-    flex-direction: column;
 
-  }
 }
 @media (max-width: 490px) {
   .movie__watch_movie_btn {
