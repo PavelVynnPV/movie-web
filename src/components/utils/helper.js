@@ -2,7 +2,7 @@ import {Route} from "react-router-dom"
 
 
 export const getData = (setData,setFilms, setSerials, setAnime) => {
-    fetch("https://pavelvynnpv.github.io/mymovieapi/films.json")
+    fetch("http://pavelvynnpv.github.io/mymovieapi/films.json")
       .then((response) => response.json())
       .then((apiInfo) => {
         setData(apiInfo.movies.all_movies);
