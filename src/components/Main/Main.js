@@ -31,7 +31,7 @@ export default function Main({
     <>
       <main
         className={
-          webHref === `http://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
+          webHref === `https://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
             ? styles.unActive
             : styles.active
         }
