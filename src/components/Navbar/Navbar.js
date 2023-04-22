@@ -144,7 +144,7 @@ export default function Navbar({
 
         <div
           className={
-            webHref === `http://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
+            webHref === `https://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
               ? styles.unActive
               : styles.nav__inner_search_box
           }

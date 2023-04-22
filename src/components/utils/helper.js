@@ -2,7 +2,7 @@ import {Route} from "react-router-dom"
 
 
 export const getData = (setData,setFilms, setSerials, setAnime) => {
-    fetch("https://pavelvynnpv.github.io/mymovieapi/films.json")
+    fetch("httpss://pavelvynnpv.github.io/mymovieapi/films.json")
       .then((response) => response.json())
       .then((apiInfo) => {
         setData(apiInfo.movies.all_movies);
@@ -24,22 +24,22 @@ export const dataChanger = (
   movieTime,
   favourites
 ) => {
-  if (webHref === "http://pavelvynnpv.github.io/movie-web") {
+  if (webHref === "https://pavelvynnpv.github.io/movie-web") {
     <Route exact path="/movie-web"/>
     return data;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/films") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/films") {
     return films;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/serials") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/serials") {
     return serials;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/anime") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/anime") {
     return anime;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filteryear") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/filteryear") {
     return year;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filtercountry") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/filtercountry") {
     return country;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filtermovietime") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/filtermovietime") {
     return movieTime;
-  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/favourites") {
+  } else if (webHref === "https://pavelvynnpv.github.io/movie-web/favourites") {
     return favourites;
   } else {
     return data;
