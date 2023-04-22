@@ -70,7 +70,7 @@ export default function Navbar({
         <div className={styles.nav__inner_top}>
           <Link
             to="/movie-web"
-            onClick={() => setWebHref("https://localhost:3000/movie-web")}
+            onClick={() => setWebHref("https://pavelvynnpv.github.io/movie-web")}
             className={styles.nav__logo}
           ></Link>
           <div className={styles.nav__sign_btns}>
@@ -144,7 +144,7 @@ export default function Navbar({
 
         <div
           className={
-            webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
+            webHref === `http://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
               ? styles.unActive
               : styles.nav__inner_search_box
           }

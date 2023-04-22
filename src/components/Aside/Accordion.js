@@ -54,7 +54,7 @@ export default function Accordion({
             <Link
               to="/movie-web/films"
               onClick={(e) => {
-                setWebHref("http://localhost:3000/movie-web/films");
+                setWebHref("http://pavelvynnpv.github.io/movie-web/films");
               }}
             >
               {" "}
@@ -64,7 +64,7 @@ export default function Accordion({
             </Link>
             <Link
               to="/movie-web/serials"
-              onClick={(e) => setWebHref("http://localhost:3000/movie-web/serials")}
+              onClick={(e) => setWebHref("http://pavelvynnpv.github.io/movie-web/serials")}
             >
               <li className={styles.accordion__content_item}>
                 Серіали <span>({serials.length})</span>
@@ -72,7 +72,7 @@ export default function Accordion({
             </Link>
             <Link
               to="/movie-web/anime"
-              onClick={(e) => setWebHref("http://localhost:3000/movie-web/anime")}
+              onClick={(e) => setWebHref("http://pavelvynnpv.github.io/movie-web/anime")}
             >
               <li
                 className={
@@ -107,7 +107,7 @@ export default function Accordion({
             {newYearArray.map((item) => (
               <Link
                 to="/movie-web/filteryear"
-                onClick={(e) => setWebHref("http://localhost:3000/movie-web/filteryear")}
+                onClick={(e) => setWebHref("http://pavelvynnpv.github.io/movie-web/filteryear")}
               >
                 <li
                   className={styles.accordion__content_item}
@@ -140,7 +140,7 @@ export default function Accordion({
               <Link
                 to="/movie-web/filtercountry"
                 onClick={(e) =>
-                  setWebHref("http://localhost:3000/movie-web/filtercountry")
+                  setWebHref("http://pavelvynnpv.github.io/movie-web/filtercountry")
                 }
               >
                 <li
@@ -176,7 +176,7 @@ export default function Accordion({
               <Link
                 to="/movie-web/filtermovietime"
                 onClick={(e) =>
-                  setWebHref("http://localhost:3000/movie-web/filtermovietime")
+                  setWebHref("http://pavelvynnpv.github.io/movie-web/filtermovietime")
                 }
               >
                 <li
