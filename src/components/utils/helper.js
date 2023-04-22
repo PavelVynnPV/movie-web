@@ -24,22 +24,22 @@ export const dataChanger = (
   movieTime,
   favourites
 ) => {
-  if (webHref === "http://localhost:3000/movie-web") {
+  if (webHref === "http://pavelvynnpv.github.io/movie-web") {
     <Route exact path="/"/>
     return data;
-  } else if (webHref === "http://localhost:3000/movie-web/films") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/films") {
     return films;
-  } else if (webHref === "http://localhost:3000/movie-web/serials") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/serials") {
     return serials;
-  } else if (webHref === "http://localhost:3000/movie-web/anime") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/anime") {
     return anime;
-  } else if (webHref === "http://localhost:3000/movie-web/filteryear") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filteryear") {
     return year;
-  } else if (webHref === "http://localhost:3000/movie-web/filtercountry") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filtercountry") {
     return country;
-  } else if (webHref === "http://localhost:3000/movie-web/filtermovietime") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/filtermovietime") {
     return movieTime;
-  } else if (webHref === "http://localhost:3000/movie-web/favourites") {
+  } else if (webHref === "http://pavelvynnpv.github.io/movie-web/favourites") {
     return favourites;
   } else {
     return data;
