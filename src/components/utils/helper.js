@@ -25,7 +25,7 @@ export const dataChanger = (
   favourites
 ) => {
   if (webHref === "http://pavelvynnpv.github.io/movie-web") {
-    <Route exact path="/"/>
+    <Route exact path="/movie-web"/>
     return data;
   } else if (webHref === "http://pavelvynnpv.github.io/movie-web/films") {
     return films;
