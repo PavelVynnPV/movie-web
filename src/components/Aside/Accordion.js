@@ -52,9 +52,9 @@ export default function Accordion({
         {activeCategory && (
           <ul className={styles.accordion__content}>
             <Link
-              to="/films"
+              to="/movie-web/films"
               onClick={(e) => {
-                setWebHref("http://localhost:3000/films");
+                setWebHref("http://localhost:3000/movie-web/films");
               }}
             >
               {" "}
@@ -63,16 +63,16 @@ export default function Accordion({
               </li>
             </Link>
             <Link
-              to="/serials"
-              onClick={(e) => setWebHref("http://localhost:3000/serials")}
+              to="/movie-web/serials"
+              onClick={(e) => setWebHref("http://localhost:3000/movie-web/serials")}
             >
               <li className={styles.accordion__content_item}>
                 Серіали <span>({serials.length})</span>
               </li>
             </Link>
             <Link
-              to="/anime"
-              onClick={(e) => setWebHref("http://localhost:3000/anime")}
+              to="/movie-web/anime"
+              onClick={(e) => setWebHref("http://localhost:3000/movie-web/anime")}
             >
               <li
                 className={
@@ -106,8 +106,8 @@ export default function Accordion({
           <ul className={styles.accordion__content}>
             {newYearArray.map((item) => (
               <Link
-                to="/filteryear"
-                onClick={(e) => setWebHref("http://localhost:3000/filteryear")}
+                to="/movie-web/filteryear"
+                onClick={(e) => setWebHref("http://localhost:3000/movie-web/filteryear")}
               >
                 <li
                   className={styles.accordion__content_item}
@@ -138,9 +138,9 @@ export default function Accordion({
           <ul className={styles.accordion__content}>
             {newCoutryArray.map((item) => (
               <Link
-                to="/filtercountry"
+                to="/movie-web/filtercountry"
                 onClick={(e) =>
-                  setWebHref("http://localhost:3000/filtercountry")
+                  setWebHref("http://localhost:3000/movie-web/filtercountry")
                 }
               >
                 <li
@@ -174,9 +174,9 @@ export default function Accordion({
           <ul className={styles.accordion__content}>
             {newMovieTimeArray.map((item) => (
               <Link
-                to="/filtermovietime"
+                to="/movie-web/filtermovietime"
                 onClick={(e) =>
-                  setWebHref("http://localhost:3000/filtermovietime")
+                  setWebHref("http://localhost:3000/movie-web/filtermovietime")
                 }
               >
                 <li

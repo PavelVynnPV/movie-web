@@ -5,7 +5,6 @@ import { Navbar } from "./components/Navbar";
 import { Main } from "./components/Main";
 import SinglePage from "./components/MoviesList/SinglePage";
 import { dataChanger, getData } from "./components/utils/helper";
-import { Login } from "./components/SignForm";
 
 function App() {
   const [films, setFilms] = useState([]);
@@ -87,16 +86,15 @@ function App() {
     setMovieTime(filteredMovieTime);
   };
 
+  console.log(webHref)
 
 
   return (
     <>
-
-
       <div className={"app_content"}>
         <img
           className={
-            webHref === `http://movie-web/localhost:3000/singlepage/${itemInfo.id}`
+            webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
               ? "unActive"
               : "main_bg_photo"
           }
@@ -106,7 +104,7 @@ function App() {
         <div className="image_shadow_box">
           <img
             className={
-              webHref === `http://movie-web/localhost:3000/singlepage/${itemInfo.id}`
+              webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
                 ? "singlep__background"
                 : "unActive_img"
             }
@@ -160,7 +158,7 @@ function App() {
           />
           <Routes>
             <Route
-              path="singlepage/:id"
+              path="movie-web/singlepage/:id"
               element={
                 <SinglePage itemInfo={itemInfo} setWebHref={setWebHref} />
               }

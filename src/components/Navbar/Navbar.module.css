@@ -339,6 +339,10 @@ nav {
   .sign_form__inner {
     left: 70px;
   }
+  .client__profile_image {
+    right: 0%;
+    top: 20px;
+  }
 }
 @media (max-width: 468px) {
   .sign_form__inner {

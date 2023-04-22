@@ -69,8 +69,8 @@ export default function Navbar({
       <div className={styles.nav__inner}>
         <div className={styles.nav__inner_top}>
           <Link
-            to="/"
-            onClick={() => setWebHref("http://localhost:3000/")}
+            to="/movie-web"
+            onClick={() => setWebHref("https://localhost:3000/movie-web")}
             className={styles.nav__logo}
           ></Link>
           <div className={styles.nav__sign_btns}>
@@ -88,6 +88,7 @@ export default function Navbar({
                   }
                 >
                   <div className={styles.client__menu_container}>
+
                     <span className={styles.client__menu_logo}></span>
                     <img
                       className={styles.client__menu_img}
@@ -143,7 +144,7 @@ export default function Navbar({
 
         <div
           className={
-            webHref === `http://localhost:3000/singlepage/${itemInfo.id}`
+            webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
               ? styles.unActive
               : styles.nav__inner_search_box
           }

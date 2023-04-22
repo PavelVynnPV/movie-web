@@ -95,7 +95,7 @@ export default function MovieComponent({
               {movie.description}
             </p>
             <Link
-              to={`/singlepage/${movie.id}`}
+              to={`/movie-web/singlepage/${movie.id}`}
               className={styles.movie__watch_movie_btn}
               onClick={(e) => {
                 setWebHref(e.target.href)

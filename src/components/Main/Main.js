@@ -31,7 +31,7 @@ export default function Main({
     <>
       <main
         className={
-          webHref === `http://localhost:3000/singlepage/${itemInfo.id}`
+          webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
             ? styles.unActive
             : styles.active
         }

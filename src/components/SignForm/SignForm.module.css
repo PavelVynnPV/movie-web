@@ -102,7 +102,7 @@ input::placeholder {
   display: none;
 }
 .signInButton button div {
-  background-color: none;
+  display: none;
 }
 .signInButton button, .signInButton_facebook button {
   width: 121px;
