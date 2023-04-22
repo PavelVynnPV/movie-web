@@ -86,15 +86,12 @@ function App() {
     setMovieTime(filteredMovieTime);
   };
 
-  console.log(webHref)
-
-
   return (
     <>
       <div className={"app_content"}>
         <img
           className={
-            webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
+            webHref === `https://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
               ? "unActive"
               : "main_bg_photo"
           }
@@ -104,7 +101,7 @@ function App() {
         <div className="image_shadow_box">
           <img
             className={
-              webHref === `http://localhost:3000/movie-web/singlepage/${itemInfo.id}`
+              webHref === `https://pavelvynnpv.github.io/movie-web/singlepage/${itemInfo.id}`
                 ? "singlep__background"
                 : "unActive_img"
             }
@@ -158,7 +155,7 @@ function App() {
           />
           <Routes>
             <Route
-              path="movie-web/singlepage/:id"
+              path="/movie-web/singlepage/:id"
               element={
                 <SinglePage itemInfo={itemInfo} setWebHref={setWebHref} />
               }

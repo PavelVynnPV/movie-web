@@ -3,7 +3,6 @@ import LinksBar from "../Navbar/LinksBar";
 import styles from "./SinglePage.module.css";
 import main_styles from "../Main/Main.module.css";
 import Rating from "./Rating/Rating.js";
-import { FaStar } from "react-icons/fa";
 
 export default function SinglePage({ itemInfo, setWebHref }) {
 
