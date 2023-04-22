@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/movie-web/static/css/main.c7bc726d.css",
-    "main.js": "/movie-web/static/js/main.4f2a2472.js",
+    "main.js": "/movie-web/static/js/main.efd0e364.js",
     "static/media/seekno-logo.png": "/movie-web/static/media/seekno-logo.19504dc54de88bb9a27c.png",
     "static/media/menu_mini_settigns_icon.svg": "/movie-web/static/media/menu_mini_settigns_icon.7cbf68a9d76ae54ba60c.svg",
     "static/media/menu_mini_profile_icon.svg": "/movie-web/static/media/menu_mini_profile_icon.0f23b4a89fb4acb8f91b.svg",
@@ -15,10 +15,10 @@
     "static/media/cross_icon.svg": "/movie-web/static/media/cross_icon.2c20e4d7fa656ae1df33.svg",
     "index.html": "/movie-web/index.html",
     "main.c7bc726d.css.map": "/movie-web/static/css/main.c7bc726d.css.map",
-    "main.4f2a2472.js.map": "/movie-web/static/js/main.4f2a2472.js.map"
+    "main.efd0e364.js.map": "/movie-web/static/js/main.efd0e364.js.map"
   },
   "entrypoints": [
     "static/css/main.c7bc726d.css",
-    "static/js/main.4f2a2472.js"
+    "static/js/main.efd0e364.js"
   ]
 }
