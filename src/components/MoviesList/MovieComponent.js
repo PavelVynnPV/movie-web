@@ -98,7 +98,7 @@ export default function MovieComponent({
               to={`/movie-web/singlepage/${movie.id}`}
               className={styles.movie__watch_movie_btn}
               onClick={(e) => {
-                setWebHref(e.target.href)
+                setWebHref(`https://pavelvynnpv.github.io/movie-web/singlepage/${movie.id}`)
                 setItemInfo(movie);
               }}
             >

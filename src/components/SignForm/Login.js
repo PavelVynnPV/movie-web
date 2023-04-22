@@ -69,7 +69,6 @@ export default function Login({ activeLogin, clients }) {
   const onFailure = (res) => {
     console.log("LOGIN FAILED! res: ", res);
   };
-  console.log(isAuthenticated);
   //////
 
   const clientDataWriter = (e) => {
