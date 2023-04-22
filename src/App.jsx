@@ -22,14 +22,15 @@ function App() {
   const [activeLogin, setActiveLogin] = useState(false);
   const [activeSignUp, setActiveSignUp] = useState(false);
   const [activeClient, setActiveClient] = useState({});
-  console.log(webHref)
 
 
 
   useEffect(() => {
     getData(setData, setFilms, setSerials, setAnime);
     const itemFavourites = JSON.parse(localStorage.getItem("items")) || [];
+    const allClients = JSON.parse(localStorage.getItem("client")) || [];
     setFavourites(itemFavourites);
+    setClients(allClients);
   }, []);
 
   function handleOnClickAdd(item) {

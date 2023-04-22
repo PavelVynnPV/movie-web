@@ -76,20 +76,25 @@ export default function Login({ activeLogin, clients }) {
     newClientData[e.target.id] = e.target.value;
     setClientData(newClientData);
   };
-
+  let found = false;
   const handleOnClickLogin = (item) => {
     const allClients = JSON.parse(localStorage.getItem("client"));
+    // флаг для указания, найден ли правильный пользователь
 
-    allClients.some((client) => {
+    allClients.find((client) => {
       if (client.email === item.email && client.password === item.password) {
         localStorage.setItem("activeClient", JSON.stringify(client));
-      } else {
-        alert("Перевірте чи вірно ви ввели пароль або email");
+        found = true; // установка флага в true, если пользователь найден
       }
-      return client;
     });
-  };
 
+    if (!found) {
+      alert("false"); // вывод сообщения, если пользователь не найден
+    }
+  };
+  const reloadPage = () => {
+    return !found ? null : window.location.reload();
+  };
   return (
     <>
       <form className={activeLogin === true ? styles.active : styles.unActive}>
@@ -146,11 +151,14 @@ export default function Login({ activeLogin, clients }) {
               isSignedIn={true}
             />
           </div>
-          <div className={styles.signInButton_facebook}   onClick={() =>
+          <div
+            className={styles.signInButton_facebook}
+            onClick={() =>
               setTimeout(() => {
                 window.location.reload();
               }, 7000)
-            }>
+            }
+          >
             <FacebookLogin
               appId="1270803790449029"
               autoLoad={true}
@@ -167,6 +175,7 @@ export default function Login({ activeLogin, clients }) {
             emailInput.value = "";
             passwordInput.value = "";
             handleOnClickLogin(clientData);
+            reloadPage();
           }}
           className={
             !formValid ? styles.submit_btn : styles.submit_btn_without_hover
